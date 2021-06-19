@@ -20,6 +20,10 @@ git config –list – captura os dados padrão do git
 
 git remote add origin https://github.com/VitorDemarqui/livro_receitas.git– adiciona um repositorio remoto ao diretório. O origin é um apelido por convenção para não precisar ficar digitando a URL a todo momento.
 
+Git push origin master – sobe o commit para o github para o branch master
+
 Git pull origin master – copia do github para o seu computador
+
+
 
 git clone https://github.com/TheAlgorithms/Python.git – clona um repositorio do github com a URL
