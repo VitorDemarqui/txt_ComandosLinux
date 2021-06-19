@@ -1,0 +1,45 @@
+﻿CONECTAR COMO USUÁRIO POSTGRES => su - postgres
+CONECTAR NO BANCO DE DADOS => psql
+DESCONECTAR DO BANCO DE DADOS => \q
+
+ABRIR PGADMIN WEB
+sudo /usr/pgadmin4/bin/setup-web.sh
+
+pg_ctlcluster 13(versão do postgre ) main(nome cluster) stop(ação)
+Para a execução do cluster
+
+pg_dropcluster 13(versão do postgre) main(nome cluster)
+Exclui o cluster
+
+pg_lsclusters 
+mostra os clusters que estão ativos no sistema operacional
+
+pg_createcluster -d(indica que sera passado o diretorio) /home/postgres/aula(diretório em que será criado o cluster) 13(versão do postgre) aula(nome cluster)
+Cria um cluster, indica onde serão armazenados os dados, indica a versão e o nome do cluster
+
+pg_ctlcluster start(Ação) 13(versão) aula(nome cluster) - 
+inicia o cluster, da o start. Pois quando é criado ele cria com status down e precisa ser iniciado.
+
+Lista de ações que podem ser utilizadas=> 
+	start
+           A log file for this specific cluster is created if it does not exist yet (by default,
+           /var/log/postgresql/postgresql-cluster-version-cluster-name.log), and a PostreSQL
+           server process (postmaster(1)) is started on it. Exits with 0 on success, with 2 if
+           the server is already running, and with 1 on other failure conditions.
+
+	stop
+           Stops the postmaster(1) server of the given cluster. By default, "smart" shutdown mode
+           is used, which waits until all clients disconnected.
+
+	restart
+           Stops the server if it is running and starts it (again).
+
+	reload
+           Causes the configuration files to be re-read without a full shutdown of the server.
+
+	promote
+           Commands a running standby server to exit recovery and begin read-write operations.
+
+
+
+
