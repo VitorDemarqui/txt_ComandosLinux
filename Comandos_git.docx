@@ -1,0 +1,25 @@
+﻿Git init => cria um repositório no git dentro do diretório/pasta
+
+Untracked => são os arquivos que nós não temos ciencia desse arquivo dentro do git, utilizamos o git add para prepara-lo para fazer o commit.
+
+Unmodified => são arquivos que não sofreram modificação, o git compara o sha1 dos arquivos. Muda automaticamente pra modified.
+
+Modified são arquivos que foram modificados.
+
+
+UNTRACKED => UNMODFIED => MODIFIED => STAGED => COMMIT
+
+
+Git add - preparamos o item para dar commit,move de modified para staged, sempre que vamos dar commit temos que usar o git add’
+Git add * - faz com todos arquivos de uma vez só
+
+git status – mostra status dos itens do git, em untracked, unmodified, etc.
+
+
+git config –list – captura os dados padrão do git
+
+git remote add origin https://github.com/VitorDemarqui/livro_receitas.git– adiciona um repositorio remoto ao diretório. O origin é um apelido por convenção para não precisar ficar digitando a URL a todo momento.
+
+Git pull origin master – copia do github para o seu computador
+
+git clone https://github.com/TheAlgorithms/Python.git – clona um repositorio do github com a URL
